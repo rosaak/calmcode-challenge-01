@@ -1,0 +1,7 @@
+
+jq '.[]' -c   message.json | cut -d ":" -f 4 | sed s:}:: | sed s"/\"//g" | fmt -22
+
+cat message.json | jq . | grep '"' | sed 's/"//g; s/ //g' | fmt 15 | awk '{print $0}' | sed 's/i://' | sed 's/j://' | sed 's/value://' | sed "s/, /,/g" >message.csv
+
+jq -c ".[]" message.json | sed 's/{"i"://; s/"j":// ; s/"value"://; s/}//' | awk 'BEGIN{print "i,j,value"} {print $0}' >message.csv
+

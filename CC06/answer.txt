@@ -1,0 +1,6 @@
+dinosaurhead
+
+I used [Cryptogram Solver (online tool) | Boxentriq - https://www.boxentriq.com/code-breaking/cryptogram](https://www.boxentriq.com/code-breaking/cryptogram)
+to solve this problem. First using the cipher identification tool - https://www.boxentriq.com/code-breaking/cipher-identifier
+
+
